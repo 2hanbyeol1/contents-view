@@ -1,0 +1,33 @@
+$hot_pink: rgb(252, 91, 168);
+
+.banner-section {
+  margin-bottom: 1rem;
+
+  .banner-group {
+    overflow-x: hidden;
+    padding-bottom: 1rem;
+
+    .banner-inner {
+      display: flex;
+      gap: 1rem;
+      padding-top: 1.3rem;
+    }
+  }
+
+  .banner-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .nav-btn {
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      background-color: rgb(226, 226, 226);
+    }
+
+    .nav-btn.active {
+      background-color: $hot_pink;
+    }
+  }
+}

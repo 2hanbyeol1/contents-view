@@ -1,0 +1,16 @@
+@import '../../../pages/chart/sections/BannerSection';
+
+.banner-btn {
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: $hot_pink;
+  border: 1.5px solid $hot_pink;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.7rem;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+}

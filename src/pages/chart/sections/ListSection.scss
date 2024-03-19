@@ -1,0 +1,14 @@
+.list-section {
+  background-color: rgb(235, 235, 235);
+  padding: 1rem;
+
+  .title {
+    font-weight: bold;
+    padding-bottom: 0.7rem;
+  }
+
+  .list {
+    display: grid;
+    gap: 0.5rem;
+  }
+}
