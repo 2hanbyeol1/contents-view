@@ -1,29 +1,36 @@
 import './Header.scss';
-import { useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 
-const headerItems: string[] = [
-  '차트',
-  'Whook',
-  '이벤트',
-  '뉴스',
-  '스토어',
-  '충전소',
+import Path from '../../common/constants/path';
+
+const headerItems: { name: string; path: string }[] = [
+  { name: '차트', path: Path.chart },
+  { name: 'Whook', path: Path.whook },
+  { name: '이벤트', path: Path.event },
+  { name: '뉴스', path: Path.news },
+  { name: '스토어', path: Path.store },
+  { name: '충전소', path: Path.charge },
 ];
 
 const Header = () => {
-  const [active, setActive] = useState(0);
+  const location = useLocation();
 
   return (
     <header className="header">
       <ul>
-        {headerItems.map((item, idx) => (
-          <li
-            key={item}
-            className={`header-item${active === idx ? ' active' : ''}`}
-          >
-            {item}
-          </li>
-        ))}
+        {headerItems.map((item, idx) => {
+          const active = location.pathname === item.path;
+          return (
+            <li key={item.path}>
+              <Link
+                className={`header-item${active ? ' active' : ''}`}
+                to={item.path}
+              >
+                {item.name}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </header>
   );
