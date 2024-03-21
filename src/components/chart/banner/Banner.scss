@@ -1,40 +1,18 @@
 @import '../../../pages/chart/sections/BannerSection';
 
-@mixin animation($delay, $duration, $name, $animation-fill-mode) {
-  animation-delay: $delay;
-  animation-duration: $duration;
-  animation-name: $name;
-  animation-fill-mode: $animation-fill-mode;
-}
-
-@mixin keyframe($animation_name) {
-  @keyframes #{$animation_name} {
-    @content;
-  }
-}
-
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 90%;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
 
   &:hover {
     box-shadow: 0 2px 4px 3px rgba(252, 91, 168, 0.2);
     cursor: pointer;
-    @include keyframe(stay-up) {
-      100% {
-        transform: translateY(-10px);
-      }
-      0% {
-        transform: translateY(0px);
-      }
-    }
-
-    @include animation(0s, 1s, stay-up, forwards);
+    transform: translateY(-0.3rem);
   }
 
   .banner-state {

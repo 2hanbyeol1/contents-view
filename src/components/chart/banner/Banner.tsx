@@ -31,28 +31,30 @@ const Banner = ({ banner }: PropType) => {
   }, []);
 
   return (
-    <a className="card" href={banner.url} target="_blank">
-      <span className={`banner-state ${onGoing ? 'progress' : 'end'}`}>
-        {onGoing ? '진행중' : '종료'}
-      </span>
-      <div className="banner-img-container">
-        <img src={banner.src} />
-      </div>
-      <div className="banner-info-container">
-        <div className="banner-info-top">
-          <div className="banner-name">{banner.name}</div>
-          {banner.btn ? (
-            <BannerButton text={banner.btn} url={banner.url} />
-          ) : (
-            <></>
-          )}
+    <div>
+      <a className="card" href={banner.url} target="_blank">
+        <span className={`banner-state ${onGoing ? 'progress' : 'end'}`}>
+          {onGoing ? '진행중' : '종료'}
+        </span>
+        <div className="banner-img-container">
+          <img src={banner.src} />
         </div>
-        <div className="banner-date">
-          {banner.date[0].toLocaleString().slice(0, -3)} ~{' '}
-          {banner.date[1].toLocaleString().slice(0, -3)}
+        <div className="banner-info-container">
+          <div className="banner-info-top">
+            <div className="banner-name">{banner.name}</div>
+            {banner.btn ? (
+              <BannerButton text={banner.btn} url={banner.url} />
+            ) : (
+              <></>
+            )}
+          </div>
+          <div className="banner-date">
+            {banner.date[0].toLocaleString().slice(0, -3)} ~{' '}
+            {banner.date[1].toLocaleString().slice(0, -3)}
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 

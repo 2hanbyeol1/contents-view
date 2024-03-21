@@ -28,6 +28,13 @@ export const banners: {
     btn: '',
     url: 'https://twitter.com/worldkpopfest/status/1734030353038487739',
   },
+  {
+    src: 'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F81FLl%2FbtsDDWeXzEy%2FesrBjhbYJzRJj1K9DScXR1%2Fimg.jpg',
+    name: '2024 IU H.E.R. WORLD TOUR CONCERT IN YOKOHAMA',
+    date: [new Date('2024.03.23 17:00'), new Date('2024.03.24 16:00')],
+    btn: '',
+    url: 'https://iu-live2024-yokohama.com/ja/',
+  },
 ];
 
 export const chart_items: {

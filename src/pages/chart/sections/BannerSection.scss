@@ -1,33 +1,22 @@
 $hot_pink: rgb(252, 91, 168);
+$pagination-spacing: 1rem;
 
 .banner-section {
-  margin-bottom: 1rem;
+  margin-bottom: $pagination-spacing;
 
-  .banner-group {
-    overflow-x: hidden;
-    padding-bottom: 1rem;
+  .banner-swiper {
+    padding-top: 1.5rem;
 
-    .banner-inner {
+    .swiper-pagination {
+      position: static;
       display: flex;
-      gap: 1rem;
-      padding-top: 1.3rem;
-    }
-  }
+      justify-content: center;
+      gap: 0.5rem;
+      padding-top: $pagination-spacing;
 
-  .banner-nav {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-
-    .nav-btn {
-      width: 0.4rem;
-      height: 0.4rem;
-      border-radius: 50%;
-      background-color: rgb(226, 226, 226);
-    }
-
-    .nav-btn.active {
-      background-color: $hot_pink;
+      .swiper-pagination-bullet-active {
+        background-color: $hot_pink;
+      }
     }
   }
 }

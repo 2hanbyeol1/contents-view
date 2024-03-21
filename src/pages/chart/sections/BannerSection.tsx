@@ -1,31 +1,41 @@
 import './BannerSection.scss';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Banner from '../../../components/chart/banner/Banner';
+
 import { banners } from '../../../data/dummy';
 
-const BannerSection = () => {
-  const [active, setActive] = useState(0);
+// import required modules
+import { Autoplay, Pagination } from 'swiper/modules';
 
+export default function BannerSection() {
   return (
     <section className="banner-section">
-      <div className="banner-group">
-        <div className="banner-inner">
-          {banners.map((banner, idx) => {
-            return <Banner key={`banner-${idx}`} banner={banner} />;
-          })}
-        </div>
-      </div>
-      <div className="banner-nav">
-        {banners.map((_, idx) => (
-          <div
-            key={`banner-nav-${idx}`}
-            className={`nav-btn${idx === active ? ' active' : ''}`}
-          ></div>
+      <Swiper
+        loop={true}
+        spaceBetween={30}
+        centeredSlides={true}
+        slidesPerView={1.5}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination]}
+        watchOverflow={true}
+        className="banner-swiper"
+      >
+        {banners.map((banner, idx) => (
+          <SwiperSlide>
+            <Banner key={`banner-${idx}`} banner={banner} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
-};
-
-export default BannerSection;
+}
