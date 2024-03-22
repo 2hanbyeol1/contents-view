@@ -1,5 +1,5 @@
 import { useState, useEffect, RefObject } from 'react';
-import { BANNER_STATUS } from '../type/banner';
+import { BANNER_STATUS } from '../types/banner';
 
 const useSetBannerStatus = (
   bannerStateRef: RefObject<HTMLSpanElement>,

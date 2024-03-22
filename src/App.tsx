@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Chart from './pages/chart/Chart';
 import NotFound from './pages/error/NotFound';
 
-import Path from './common/constants/path';
+import Path from './constants/path';
 
 function App() {
   return (

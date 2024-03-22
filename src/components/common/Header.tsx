@@ -4,7 +4,7 @@ import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useLocation, Link } from 'react-router-dom';
 
-import { HEADER_ITEMS } from '../../common/constants/header';
+import { HEADER_ITEMS } from '../../constants/header';
 
 const Header = () => {
   const location = useLocation();

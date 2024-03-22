@@ -1,7 +1,7 @@
 import './Banner.scss';
 import { useRef } from 'react';
 import BannerButton from './BannerButton';
-import useSetBannerStatus from '../../../common/hooks/useSetBannerStatus';
+import useSetBannerStatus from '../../../hooks/useSetBannerStatus';
 
 type PropType = {
   banner: {
