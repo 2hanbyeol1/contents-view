@@ -1,7 +1,8 @@
 import './Banner.scss';
 import { useRef } from 'react';
 import BannerButton from './BannerButton';
-import useSetBannerStatus from '../../../hooks/useSetBannerStatus';
+import useBannerStatus from '../../../hooks/useBannerStatus';
+import useFormattedDateString from '../../../hooks/useDateString';
 import { BannerType } from '../../../types/banner';
 
 type PropType = {
@@ -11,7 +12,9 @@ type PropType = {
 const Banner = ({ banner }: PropType) => {
   const bannerStatusRef = useRef<HTMLSpanElement>(null);
 
-  const [status] = useSetBannerStatus(bannerStatusRef, banner.date);
+  const [status] = useBannerStatus(bannerStatusRef, banner.date);
+  const [startDateStr] = useFormattedDateString(banner.date[0]);
+  const [endDateStr] = useFormattedDateString(banner.date[1]);
 
   return (
     <div>
@@ -32,8 +35,7 @@ const Banner = ({ banner }: PropType) => {
             )}
           </div>
           <div className="banner-date">
-            {banner.date[0].toLocaleString().slice(0, -3)} ~{' '}
-            {banner.date[1].toLocaleString().slice(0, -3)}
+            {startDateStr} ~ {endDateStr}
           </div>
         </div>
       </a>

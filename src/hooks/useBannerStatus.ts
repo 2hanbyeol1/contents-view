@@ -1,7 +1,7 @@
 import { useState, useEffect, RefObject } from 'react';
 import { BannerStatusType } from '../types/banner';
 
-const useSetBannerStatus = (
+const useBannerStatus = (
   bannerStateRef: RefObject<HTMLSpanElement>,
   date: [Date, Date]
 ) => {
@@ -52,4 +52,4 @@ const useSetBannerStatus = (
   return [status];
 };
 
-export default useSetBannerStatus;
+export default useBannerStatus;
