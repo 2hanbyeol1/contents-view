@@ -11,7 +11,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header-current">{HEADER_ITEMS[location.pathname]}</div>
+      <div className="header-current">
+        🩷 {HEADER_ITEMS[location.pathname]} 🩷
+      </div>
       <Swiper
         loop={true}
         spaceBetween={0}

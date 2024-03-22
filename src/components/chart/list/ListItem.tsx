@@ -1,13 +1,9 @@
+import { ChartItemType } from '../../../types/chart';
 import './ListItem.scss';
 
 type PropType = {
   rank: number;
-  item: {
-    id: string;
-    src: string;
-    name: string;
-    artist: string;
-  };
+  item: ChartItemType;
 };
 
 const ListItem = ({ rank, item }: PropType) => {
@@ -15,10 +11,9 @@ const ListItem = ({ rank, item }: PropType) => {
     <a
       className="list-item-container"
       href={`https://www.hanteochart.com/songdetail/${item.id}/real`}
-      target="_blank"
     >
-      <div className="item-img">
-        <img src={item.src} />
+      <div className="item-img-container">
+        <img src={item.src} alt="item-img" />
       </div>
       <div className="rank">{rank}</div>
       <div className="item-info">

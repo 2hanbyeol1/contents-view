@@ -2,15 +2,10 @@ import './Banner.scss';
 import { useRef } from 'react';
 import BannerButton from './BannerButton';
 import useSetBannerStatus from '../../../hooks/useSetBannerStatus';
+import { BannerType } from '../../../types/banner';
 
 type PropType = {
-  banner: {
-    src: string;
-    name: string;
-    date: [Date, Date];
-    btn: string;
-    url: string;
-  };
+  banner: BannerType;
 };
 
 const Banner = ({ banner }: PropType) => {
@@ -20,12 +15,12 @@ const Banner = ({ banner }: PropType) => {
 
   return (
     <div>
-      <a className="card" href={banner.url} target="_blank">
+      <a className="card" href={banner.url}>
         <span ref={bannerStatusRef} className={`banner-status`}>
           {status}
         </span>
         <div className="banner-img-container">
-          <img src={banner.src} />
+          <img src={banner.src} alt="banner-img" />
         </div>
         <div className="banner-info-container">
           <div className="banner-info-top">

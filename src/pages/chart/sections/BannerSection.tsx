@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Banner from '../../../components/chart/banner/Banner';
 
-import { banners } from '../../../data/dummy';
+import { BANNERS } from '../../../data/banners';
 
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -30,7 +30,7 @@ export default function BannerSection() {
         watchOverflow={true}
         className="banner-swiper"
       >
-        {banners.map((banner, idx) => (
+        {BANNERS.map((banner, idx) => (
           <SwiperSlide>
             <Banner key={`banner-${idx}`} banner={banner} />
           </SwiperSlide>

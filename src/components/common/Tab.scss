@@ -1,0 +1,19 @@
+.tab {
+  .tab-menu {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+
+    .tab-menu-item {
+      cursor: pointer;
+      padding: 0.7rem 1rem 0.5rem;
+      border-radius: 1rem 1rem 0 0;
+      transition: 0.3s;
+    }
+  }
+
+  .tab-section {
+    padding: 1rem;
+  }
+}

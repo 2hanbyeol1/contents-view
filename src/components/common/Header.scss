@@ -21,6 +21,12 @@ $pink: rgb(255, 177, 178);
     .header-item {
       color: black;
       padding: 0.1rem 0;
+      transition: 0.7s;
+
+      &:hover {
+        font-weight: bold;
+        color: rgb(252, 91, 168);
+      }
     }
 
     .header-item.active {

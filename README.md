@@ -12,7 +12,13 @@
     - not found page
   - package architecture
   - swiper 구현 방법
+- 각 화면 구현
 
-+) 추가 구현
+  - Event
+  - News
+  - Store
+  - Whook
+
+    +) 추가 구현
 
 - data가 0개일 때,

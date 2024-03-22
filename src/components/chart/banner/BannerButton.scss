@@ -5,12 +5,12 @@
   font-weight: bold;
   white-space: nowrap;
   color: $hot_pink;
-  border: 1.5px solid $hot_pink;
+  border: 1.5px solid rgb(252, 91, 168);
   padding: 0.3rem 0.7rem;
   border-radius: 0.7rem;
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.05);
-    cursor: pointer;
   }
 }

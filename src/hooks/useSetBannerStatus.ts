@@ -1,11 +1,11 @@
 import { useState, useEffect, RefObject } from 'react';
-import { BANNER_STATUS } from '../types/banner';
+import { BannerStatusType } from '../types/banner';
 
 const useSetBannerStatus = (
   bannerStateRef: RefObject<HTMLSpanElement>,
   date: [Date, Date]
 ) => {
-  const [status, setStatus] = useState<BANNER_STATUS | ''>('');
+  const [status, setStatus] = useState<BannerStatusType | ''>('');
 
   useEffect(() => {
     getStatus(date, bannerStateRef);

@@ -8,10 +8,10 @@
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
   transition: transform 1s;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 2px 4px 3px rgba(252, 91, 168, 0.2);
-    cursor: pointer;
     transform: translateY(-0.3rem);
   }
 

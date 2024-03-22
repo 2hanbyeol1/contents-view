@@ -1,0 +1,52 @@
+$border-color: rgb(187, 187, 187);
+
+.charge-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 177, 178, 0.1);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .left-items {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 0.7rem;
+    }
+
+    .charge-info {
+      display: flex;
+      flex-direction: column;
+      .charge-name {
+        margin-bottom: 0.2rem;
+        .charge-num {
+          font-weight: bold;
+        }
+      }
+
+      .charge-price {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .charge-btn {
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+      color: rgb(252, 91, 168);
+    }
+  }
+}
