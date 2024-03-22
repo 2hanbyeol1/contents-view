@@ -4,6 +4,7 @@ import BannerButton from './BannerButton';
 import useBannerStatus from '../../../hooks/useBannerStatus';
 import useFormattedDateString from '../../../hooks/useDateString';
 import { BannerType } from '../../../types/banner';
+import Card from '../../common/Card';
 
 type PropType = {
   banner: BannerType;
@@ -16,16 +17,13 @@ const Banner = ({ banner }: PropType) => {
   const [startDateStr] = useFormattedDateString(banner.date[0]);
   const [endDateStr] = useFormattedDateString(banner.date[1]);
 
-  return (
-    <div>
-      <a className="card" href={banner.url}>
+  const Content = () => {
+    return (
+      <>
         <span ref={bannerStatusRef} className={`banner-status`}>
           {status}
         </span>
-        <div className="banner-img-container">
-          <img src={banner.src} alt="banner-img" />
-        </div>
-        <div className="banner-info-container">
+        <div className="banner-content">
           <div className="banner-info-top">
             <div className="banner-name">{banner.name}</div>
             {banner.btn ? (
@@ -38,7 +36,13 @@ const Banner = ({ banner }: PropType) => {
             {startDateStr} ~ {endDateStr}
           </div>
         </div>
-      </a>
+      </>
+    );
+  };
+
+  return (
+    <div className="banner">
+      <Card url="" src={banner.src} content={<Content />} />
     </div>
   );
 };

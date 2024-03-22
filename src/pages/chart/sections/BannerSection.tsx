@@ -31,8 +31,8 @@ export default function BannerSection() {
         className="banner-swiper"
       >
         {BANNERS.map((banner, idx) => (
-          <SwiperSlide>
-            <Banner key={`banner-${idx}`} banner={banner} />
+          <SwiperSlide key={`banner-${idx}`}>
+            <Banner banner={banner} />
           </SwiperSlide>
         ))}
       </Swiper>

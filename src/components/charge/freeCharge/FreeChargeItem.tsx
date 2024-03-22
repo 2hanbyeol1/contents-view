@@ -10,7 +10,7 @@ type FreeChargeItemProps = {
 const FreeChargeItem = ({ info }: FreeChargeItemProps) => {
   const Content = () => {
     return (
-      <div className="free-charge-item">
+      <div className="free-charge-item-content">
         <div className="title">{info.title}</div>
         <div className="desc">
           {info.condition} 시 <span className="num">{info.num}</span> 크레딧

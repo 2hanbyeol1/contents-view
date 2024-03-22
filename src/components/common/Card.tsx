@@ -13,7 +13,7 @@ const Card = ({ width = '100%', url, src, content }: CardPropType) => {
     <div style={{ width: width }}>
       <a className="card" href={url}>
         <div className="card-img-container">
-          <img src={src} alt="free-charge-img" />
+          <img src={src} alt="card-img" />
         </div>
         <div className="card-info-container">{content}</div>
       </a>
