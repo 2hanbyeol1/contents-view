@@ -11,16 +11,14 @@ type PropType = {
 };
 
 const Banner = ({ banner }: PropType) => {
-  const bannerStatusRef = useRef<HTMLSpanElement>(null);
-
-  const [status] = useBannerStatus(bannerStatusRef, banner.date);
-  const [startDateStr] = useFormattedDateString(banner.date[0]);
-  const [endDateStr] = useFormattedDateString(banner.date[1]);
+  const { backgroundColor, status } = useBannerStatus(banner.date);
+  const startDateStr = useFormattedDateString(banner.date[0]);
+  const endDateStr = useFormattedDateString(banner.date[1]);
 
   const Content = () => {
     return (
       <>
-        <span ref={bannerStatusRef} className={`banner-status`}>
+        <span style={{ backgroundColor }} className={`banner-status`}>
           {status}
         </span>
         <div className="banner-content">

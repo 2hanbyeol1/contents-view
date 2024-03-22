@@ -14,7 +14,7 @@ const useFormattedDateString = (d: Date) => {
     setDateStr(str);
   }, []);
 
-  return [dateStr];
+  return dateStr;
 };
 
 /**
