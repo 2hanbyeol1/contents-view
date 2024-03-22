@@ -5,7 +5,7 @@ const useFormattedDateString = (d: Date) => {
 
   useEffect(() => {
     const year = d.getFullYear();
-    const month = padTwoDigits(d.getMonth());
+    const month = padTwoDigits(d.getMonth() + 1);
     const date = padTwoDigits(d.getDate());
     const hours = padTwoDigits(d.getHours());
     const minutes = padTwoDigits(d.getMinutes());

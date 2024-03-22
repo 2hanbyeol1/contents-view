@@ -5,7 +5,7 @@ export const BANNERS: BannerType[] = [
   {
     src: img,
     name: '[M COUNTDOWN] 10월 2주차 엠카 글로벌 사전 투표',
-    date: [new Date('2024.04.01 10:00'), new Date('2024.03.24 10:00')],
+    date: [new Date('2024.04.01 10:00'), new Date('2024.05.24 10:00')],
     btn: '투표하기',
     url: 'https://twitter.com/Whosfan_Ofcl/status/1276379826962612224',
   },
