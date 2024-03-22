@@ -1,19 +1,30 @@
+$pink: rgb(255, 177, 178);
+
 .header {
-  background-color: rgb(255, 177, 178);
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0.8rem 0;
-    list-style: none;
+  .header-current {
+    background-color: $pink;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.7rem 0;
+  }
+
+  .header-swiper {
+    padding: 0.5rem 0.5rem;
+    border-top: 1.3px solid $pink;
+    border-bottom: 1.3px solid $pink;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
 
     .header-item {
-      color: rgb(0, 0, 0);
-      font-weight: bold;
+      color: black;
+      padding: 0.1rem 0;
     }
 
     .header-item.active {
-      color: rgb(255, 255, 255);
+      border-bottom: 1px solid black;
     }
   }
 }

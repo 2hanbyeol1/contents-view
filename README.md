@@ -12,8 +12,6 @@
     - not found page
   - package architecture
   - swiper 구현 방법
-- header 무한 스크롤
-  - 좌<->우 슬라이드
 
 +) 추가 구현
 
