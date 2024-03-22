@@ -1,7 +1,7 @@
 import './Banner.scss';
-import { useState, useEffect } from 'react';
-
+import { useRef } from 'react';
 import BannerButton from './BannerButton';
+import useSetBannerStatus from '../../../common/hooks/useSetBannerStatus';
 
 type PropType = {
   banner: {
@@ -14,27 +14,15 @@ type PropType = {
 };
 
 const Banner = ({ banner }: PropType) => {
-  const [onGoing, setGoing] = useState(false);
+  const bannerStatusRef = useRef<HTMLSpanElement>(null);
 
-  const isEventOnProgress = (date: [Date, Date]) => {
-    const now = new Date().getTime();
-    const st = date[0].getTime();
-    const fin = date[1].getTime();
-
-    if (st < now && now < fin) {
-      setGoing(true);
-    }
-  };
-
-  useEffect(() => {
-    isEventOnProgress(banner.date);
-  }, []);
+  const [status] = useSetBannerStatus(bannerStatusRef, banner.date);
 
   return (
     <div>
       <a className="card" href={banner.url} target="_blank">
-        <span className={`banner-state ${onGoing ? 'progress' : 'end'}`}>
-          {onGoing ? '진행중' : '종료'}
+        <span ref={bannerStatusRef} className={`banner-status`}>
+          {status}
         </span>
         <div className="banner-img-container">
           <img src={banner.src} />
