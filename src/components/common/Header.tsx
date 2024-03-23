@@ -9,15 +9,15 @@ import { HEADER_ITEMS } from '../../constants/header';
 const Header = () => {
   const location = useLocation();
 
+  const categoryPath = '/' + location.pathname.split('/')[1];
+
   const headerItemArr = Object.entries(HEADER_ITEMS).filter(
-    (item) => location.pathname !== item[0]
+    (item) => categoryPath !== item[0]
   );
 
   return (
     <header className="header">
-      <div className="header-current">
-        🩷 {HEADER_ITEMS[location.pathname]} 🩷
-      </div>
+      <div className="header-current">🩷 {HEADER_ITEMS[categoryPath]} 🩷</div>
       <Swiper
         loop={true}
         spaceBetween={0}

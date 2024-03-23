@@ -1,11 +1,16 @@
+import { CHART_ITEMS_100 } from '../../data/chart';
 import BannerSection from './sections/BannerSection';
-import ListSection from './sections/ListSection';
+import ChartListSection from './sections/ChartListSection';
 
 const Chart = () => {
   return (
     <>
       <BannerSection />
-      <ListSection />
+      <ChartListSection
+        title="뮤직 차트"
+        items={CHART_ITEMS_100.slice(0, 5)}
+        btnActive
+      />
     </>
   );
 };

@@ -1,12 +1,12 @@
 import { ChartItemType } from '../../../types/chart';
-import './ListItem.scss';
+import './ChartListItem.scss';
 
 type PropType = {
   rank: number;
   item: ChartItemType;
 };
 
-const ListItem = ({ rank, item }: PropType) => {
+const ChartListItem = ({ rank, item }: PropType) => {
   return (
     <a
       className="list-item-container"
@@ -24,4 +24,4 @@ const ListItem = ({ rank, item }: PropType) => {
   );
 };
 
-export default ListItem;
+export default ChartListItem;

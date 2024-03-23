@@ -1,6 +1,6 @@
 import { ChartItemType } from '../types/chart';
 
-export const CHART_ITEMS: ChartItemType[] = [
+const CHART_ITEMS: ChartItemType[] = [
   {
     id: '1777748',
     src: 'https://resource.hanteochart.io/album/900523925_s150.jpg?now=1710873620973',
@@ -32,3 +32,10 @@ export const CHART_ITEMS: ChartItemType[] = [
     artist: '아이유',
   },
 ];
+
+let duplicatedArray: ChartItemType[] = [];
+for (let i = 0; i < 20; i++) {
+  duplicatedArray = duplicatedArray.concat(CHART_ITEMS);
+}
+
+export const CHART_ITEMS_100: ChartItemType[] = duplicatedArray;

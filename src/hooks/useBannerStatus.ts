@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, RefObject } from 'react';
+import { useState, useEffect } from 'react';
 import { BannerStatusType } from '../types/banner';
 
 const useBannerStatus = (date: [Date, Date]) => {
