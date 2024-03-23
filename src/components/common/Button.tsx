@@ -1,19 +1,38 @@
+import { ReactNode } from 'react';
 import './Button.scss';
 
-const handleClick = (url: string) => {
-  if (url) window.location.href = url;
-  else alert('링크가 없습니다.');
-};
-
 type PropType = {
-  text: string;
-  url: string;
+  width?: number | string;
+  borderRadius?: number | string;
+  borderWidth?: number | string;
+  text?: string;
+  url?: string;
+  children?: ReactNode;
+  onClick?: () => void | undefined;
 };
 
-const Button = ({ text, url }: PropType) => {
+const Button = ({
+  width = '',
+  borderRadius = '0.7rem',
+  borderWidth = 1.5,
+  text,
+  url = '',
+  children,
+  onClick,
+}: PropType) => {
+  const handleClick = (url: string) => {
+    if (url) window.location.href = url;
+    if (onClick) onClick();
+  };
+
   return (
-    <button className="btn" onClick={() => handleClick(url)}>
+    <button
+      style={{ width, borderRadius, borderWidth }}
+      className="btn"
+      onClick={() => handleClick(url)}
+    >
       {text}
+      {children}
     </button>
   );
 };
