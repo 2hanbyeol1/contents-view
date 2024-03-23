@@ -1,11 +1,11 @@
-import WhookRoom from '../../../components/whook/WhookRoom';
+import WhookRoom from './WhookRoom';
 import { WhookRoomType } from '../../../types/whook';
 
 type PropType = {
   rooms: WhookRoomType[];
 };
 
-const WhookListSection = ({ rooms }: PropType) => {
+const WhookRoomListSection = ({ rooms }: PropType) => {
   return (
     <section className="whook-list-section">
       {rooms.map((room) => (
@@ -15,4 +15,4 @@ const WhookListSection = ({ rooms }: PropType) => {
   );
 };
 
-export default WhookListSection;
+export default WhookRoomListSection;

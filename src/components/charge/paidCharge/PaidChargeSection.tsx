@@ -1,4 +1,4 @@
-import PaidChargeItem from '../../../components/charge/paidCharge/PaidChargeItem';
+import PaidChargeItem from './PaidChargeItem';
 
 import { CHARGE_PRICE_INFO } from '../../../data/charge';
 

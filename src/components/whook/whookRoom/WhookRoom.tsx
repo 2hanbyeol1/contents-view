@@ -1,7 +1,7 @@
 import './WhookRoom.scss';
 
-import ListItem from '../common/ListItem';
-import { WhookRoomType } from '../../types/whook';
+import ListItem from '../../common/ListItem';
+import { WhookRoomType } from '../../../types/whook';
 
 type PropType = {
   room: WhookRoomType;

@@ -1,5 +1,5 @@
 import './ChartListSection.scss';
-import ChartListItem from '../../../components/chart/list/ChartListItem';
+import ChartListItem from './ChartListItem';
 import { Link } from 'react-router-dom';
 
 import MoreImg from '../../../assets/more.png';
@@ -29,7 +29,7 @@ const ChartListSection = ({ title, items, btnActive = false }: PropType) => {
       <article className="chart-list">
         {items.map((item, idx) => (
           <ChartListItem
-            key={`chart-list-${item.id}`}
+            key={`chart-${btnActive ? '' : '100'}-list-${idx}`}
             rank={idx + 1}
             item={item}
           />

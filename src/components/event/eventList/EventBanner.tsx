@@ -1,9 +1,9 @@
 import './EventBanner.scss';
-import useBannerStatus from '../../hooks/useBannerStatus';
-import useFormattedDateString from '../../hooks/useDateString';
-import { EventType } from '../../types/event';
-import Card from '../common/Card';
-import Button from '../common/Button';
+import useBannerStatus from '../../../hooks/useBannerStatus';
+import useFormattedDateString from '../../../hooks/useDateString';
+import { EventType } from '../../../types/event';
+import Card from '../../common/Card';
+import Button from '../../common/Button';
 
 type PropType = {
   event: EventType;

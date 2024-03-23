@@ -14,17 +14,20 @@
 - **assets**
   : 이미지 파일
 - **components**
-  : 프로젝트 전반적으로 재사용되는 **공통 컴포넌트**와 각 페이지/섹션 별로 필요한 컴포넌트 **기능별 컴포넌트**
+  : 프로젝트 전반적으로 재사용되는 **공통 컴포넌트**와 각 페이지 별로 필요한 **기능별 컴포넌트**
 
   ```
   ./src/components
   ├── charge
   │   ├── freeCharge
   |   │   ├── FreeChargeItem.scss
-  |   │   └── FreeChargeItem.tsx
+  |   │   ├── FreeChargeItem.tsx
+  |   │   ├── FreeChargeSection.scss
+  |   │   └── FreeChargeSection.tsx
   │   └── paidCharge
-  |       ├── PaidChargeItem.scss
-  |       └── PaidChargeItem.tsx
+  |   │   ├── PaidChargeItem.scss
+  |   │   ├── PaidChargeItem.tsx
+  |   │   └── PaidChargeSection.tsx
   ├── chart
   ├── error
   ├── event
@@ -52,18 +55,15 @@
 - **layout**
   : 레이아웃 파일
 - **pages**
-  : 라우팅을 적용할 때 필요한 **각 카테고리 별 페이지 및 섹션**과 **에러 페이지**
+  : 라우팅을 적용할 때 필요한 **각 카테고리 별 페이지**과 **에러 페이지**
 
   ```
   ./src/pages
-  ├── charge
-  │   ├── section
-  |   │   ├── FreeChargeSection.scss
-  |   │   ├── FreeChargeSection.tsx
-  |   │   └── PaidChargeSection.tsx
-  │   ├── Charge.scss
-  │   └── userApiSlice.ts
   ├── chart
+  │   ├── 100
+  |   │   └── Chart100.tsx
+  │   └── Chart.tsx
+  ├── charge
   ├── event
   ├── news
   ├── store

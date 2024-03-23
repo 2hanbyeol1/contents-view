@@ -1,8 +1,8 @@
 import './Charge.scss';
 import Tab from '../../components/common/Tab';
 
-import FreeChargeSection from './section/FreeChargeSection';
-import PaidChargeSection from './section/PaidChargeSection';
+import FreeChargeSection from '../../components/charge/freeCharge/FreeChargeSection';
+import PaidChargeSection from '../../components/charge/paidCharge/PaidChargeSection';
 
 const Charge = () => {
   const menus = ['무료 충전소', '유료 충전소'];

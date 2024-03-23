@@ -1,7 +1,7 @@
 import './PhotoNewsSection.scss';
 
 import { PHOTO_NEWS } from '../../../data/news';
-import PhotoNews from '../../../components/news/photoNews/PhotoNews';
+import PhotoNews from './PhotoNews';
 
 const PhotoNewsSection = () => {
   return (

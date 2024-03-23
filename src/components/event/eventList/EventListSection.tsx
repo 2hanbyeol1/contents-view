@@ -1,5 +1,5 @@
 import './EventListSection.scss';
-import EventBanner from '../../../components/event/EventBanner';
+import EventBanner from './EventBanner';
 
 import { EVENTS } from '../../../data/event';
 

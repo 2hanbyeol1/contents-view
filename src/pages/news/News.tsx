@@ -1,5 +1,5 @@
-import PhotoNewsSection from './section/PhotoNewsSection';
-import RecentNewsSection from './section/RecentNewsSection';
+import PhotoNewsSection from '../../components/news/photoNews/PhotoNewsSection';
+import RecentNewsSection from '../../components/news/RecentNews/RecentNewsSection';
 
 const News = () => {
   return (

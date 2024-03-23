@@ -1,5 +1,5 @@
 import './FreeChargeSection.scss';
-import FreeChargeItem from '../../../components/charge/freeCharge/FreeChargeItem';
+import FreeChargeItem from './FreeChargeItem';
 
 import { FREE_CHARGE_INFO } from '../../../data/charge';
 

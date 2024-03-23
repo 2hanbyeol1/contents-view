@@ -10,7 +10,7 @@ import Charge from './pages/charge/Charge';
 import NotFound from './pages/error/NotFound';
 
 import Path from './constants/path';
-import Chart100 from './pages/chart/music/Chart100';
+import Chart100 from './pages/chart/100/Chart100';
 
 function App() {
   return (

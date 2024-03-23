@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Banner from '../../../components/chart/banner/Banner';
+import Banner from './Banner';
 
 import { BANNERS } from '../../../data/banners';
 

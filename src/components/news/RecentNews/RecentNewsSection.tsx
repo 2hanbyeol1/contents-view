@@ -1,7 +1,7 @@
 import './RecentNewsSection.scss';
 
 import { RECENT_NEWS } from '../../../data/news';
-import ListItem from '../../../components/common/ListItem';
+import ListItem from '../../common/ListItem';
 
 const RecentNewsSection = () => {
   return (

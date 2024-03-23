@@ -7,10 +7,10 @@ import ListItem from '../common/ListItem';
 
 type PROPTYPE = {
   store: StoreType;
-  isCoinStore?: boolean;
+  isCoinStore: boolean;
 };
 
-const StoreItem = ({ store, isCoinStore = false }: PROPTYPE) => {
+const StoreItem = ({ store, isCoinStore }: PROPTYPE) => {
   return (
     <ListItem>
       <div className="store-item">
