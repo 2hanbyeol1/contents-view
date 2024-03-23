@@ -40,7 +40,7 @@ const Banner = ({ banner }: PropType) => {
 
   return (
     <div className="banner">
-      <Card url="" src={banner.src} content={<Content />} />
+      <Card url={banner.url} src={banner.src} content={<Content />} />
     </div>
   );
 };
