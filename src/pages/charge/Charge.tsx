@@ -1,5 +1,5 @@
 import './Charge.scss';
-import { Tab } from '../../components/common/Tab';
+import Tab from '../../components/common/Tab';
 
 import FreeChargeSection from './section/FreeChargeSection';
 import PaidChargeSection from './section/PaidChargeSection';

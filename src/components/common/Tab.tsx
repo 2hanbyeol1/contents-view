@@ -3,7 +3,7 @@ import { useState, ReactNode } from 'react';
 
 type TabSectionPropType = { menus: string[]; sections: ReactNode[] };
 
-export const Tab = ({ menus, sections }: TabSectionPropType) => {
+const Tab = ({ menus, sections }: TabSectionPropType) => {
   const [active, setActive] = useState<number>(0);
 
   const handleMenuClick = (idx: number) => {
@@ -31,3 +31,5 @@ export const Tab = ({ menus, sections }: TabSectionPropType) => {
     </div>
   );
 };
+
+export default Tab;
