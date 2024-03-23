@@ -149,6 +149,6 @@ hover 시 애니메이션, 그림자 색상 변경
 
 ### ⚠️ 404 에러
 
-<img width="234" alt="image" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/a740b653-fb14-48c1-ab81-cadf7e136757">
+<img width="234" alt="image" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/eae8e094-4fb9-4b61-827e-fea57b15c5b9">
 
 돌아가기 버튼을 누르면 이전 화면으로, 메인화면 버튼을 누르면 메인(차트)화면으로 이동합니다.
