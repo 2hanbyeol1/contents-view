@@ -2,7 +2,7 @@ import './ChartListSection.scss';
 import ChartListItem from './ChartListItem';
 import { CHART_ITEMS_100 } from '../../../data/chart';
 import useInfiniteScroll from '../../../hooks/useInfiniteScroll';
-import loadingImg from '../../../assets/loading.gif';
+import Loading from '../../common/Loading';
 
 const ChartListSection = () => {
   const dataPerPage = 20;
@@ -34,9 +34,7 @@ const ChartListSection = () => {
             />
           );
         })}
-        <div style={{ textAlign: 'center', marginTop: 2 }} ref={targetRef}>
-          {isLoading ? <img width="30" src={loadingImg} /> : <></>}
-        </div>
+        <Loading targetRef={targetRef} isLoading={isLoading} />
       </div>
     </section>
   );

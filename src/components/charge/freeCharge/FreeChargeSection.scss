@@ -1,12 +1,14 @@
 .free-charge-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  .free-charge-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 
-  .desc {
-    .num {
-      color: hotpink;
-      font-weight: bold;
+    .desc {
+      .num {
+        color: hotpink;
+        font-weight: bold;
+      }
     }
   }
 }
