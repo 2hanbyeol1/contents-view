@@ -4,37 +4,21 @@ import { Link } from 'react-router-dom';
 
 import MoreImg from '../../../assets/more.png';
 import Path from '../../../constants/path';
-import { ChartItemType } from '../../../types/chart';
 
-type PropType = {
-  title: string;
-  items: ChartItemType[];
-  btnActive?: boolean;
-};
+import { CHART_ITEMS_100 } from '../../../data/chart';
 
-const ChartListSection = ({ title, items, btnActive = false }: PropType) => {
+const ChartListSection = () => {
   return (
     <section className="chart-list-section">
-      {btnActive ? (
-        <Link className="title-container" to={Path.chart100}>
-          <div className="title">{title}</div>
-          <img src={MoreImg} alt="more-icon" />
-        </Link>
-      ) : (
-        <div className="title-container">
-          <div className="title">{title}</div>
-        </div>
-      )}
-
-      <article className="chart-list">
-        {items.map((item, idx) => (
-          <ChartListItem
-            key={`chart-${btnActive ? '' : '100'}-list-${idx}`}
-            rank={idx + 1}
-            item={item}
-          />
+      <Link className="title-container" to={Path.chart100}>
+        <div className="title">뮤직 차트</div>
+        <img src={MoreImg} alt="more-icon" />
+      </Link>
+      <div className="chart-list">
+        {CHART_ITEMS_100.slice(0, 5).map((item, idx) => (
+          <ChartListItem key={`chart-list-${idx}`} rank={idx + 1} item={item} />
         ))}
-      </article>
+      </div>
     </section>
   );
 };

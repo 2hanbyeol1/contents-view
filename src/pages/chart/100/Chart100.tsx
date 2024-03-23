@@ -1,8 +1,7 @@
-import { CHART_ITEMS_100 } from '../../../data/chart';
-import ChartListSection from '../../../components/chart/chartList/ChartListSection';
+import ChartList100Section from '../../../components/chart/chartList/ChartList100Section';
 
 const Chart100 = () => {
-  return <ChartListSection title="TOP 100 차트" items={CHART_ITEMS_100} />;
+  return <ChartList100Section />;
 };
 
 export default Chart100;
