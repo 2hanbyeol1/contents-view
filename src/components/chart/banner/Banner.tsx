@@ -1,5 +1,4 @@
 import './Banner.scss';
-import { useRef } from 'react';
 import BannerButton from './BannerButton';
 import useBannerStatus from '../../../hooks/useBannerStatus';
 import useFormattedDateString from '../../../hooks/useDateString';

@@ -1,0 +1,20 @@
+.recent-news-section {
+  padding-top: 1.5rem;
+
+  .title {
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 1px solid gray;
+    font-size: 0.9rem;
+  }
+
+  .recent-news-list {
+    padding: 0 0.5rem;
+
+    .recent-news-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

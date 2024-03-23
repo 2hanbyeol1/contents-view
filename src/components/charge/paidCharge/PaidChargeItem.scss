@@ -5,16 +5,6 @@ $border-color: rgb(187, 187, 187);
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0.5rem;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
-  transition: 0.5s;
-  cursor: pointer;
-
-  &:hover {
-    background-color: rgba(255, 177, 178, 0.1);
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-  }
 
   .left-items {
     display: flex;

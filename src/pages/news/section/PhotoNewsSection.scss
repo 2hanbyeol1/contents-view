@@ -1,0 +1,21 @@
+.photo-news-section {
+  padding-top: 1.5rem;
+
+  .title {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  & > .title {
+    padding: 0.5rem;
+    border-bottom: 1px solid gray;
+  }
+
+  .photo-news-grid {
+    max-width: 100vw;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
