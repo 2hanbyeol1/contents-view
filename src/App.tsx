@@ -2,15 +2,16 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import MainLayout from './layout/MainLayout';
 import Chart from './pages/chart/Chart';
-import Event from './pages/event/Event';
+import Chart100 from './pages/chart/100/Chart100';
 import Whook from './pages/whook/Whook';
+import WhookChat from './pages/whook/chat/WhookChat';
+import Event from './pages/event/Event';
 import News from './pages/news/News';
 import Store from './pages/store/Store';
 import Charge from './pages/charge/Charge';
 import NotFound from './pages/error/NotFound';
 
 import Path from './constants/path';
-import Chart100 from './pages/chart/100/Chart100';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path={Path.chart} element={<Chart />} />
           <Route path={Path.chart100} element={<Chart100 />} />
           <Route path={Path.whook} element={<Whook />} />
+          <Route path={Path.whookChat} element={<WhookChat />} />
           <Route path={Path.event} element={<Event />} />
           <Route path={Path.news} element={<News />} />
           <Route path={Path.store} element={<Store />} />

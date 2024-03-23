@@ -5,6 +5,7 @@ import ListItem from '../../common/ListItem';
 import { WhookRoomType } from '../../../types/whook';
 import Modal from '../../common/Modal';
 import Button from '../../common/Button';
+import Path from '../../../constants/path';
 
 type PropType = {
   room: WhookRoomType;
@@ -18,11 +19,6 @@ const WhookRoom = ({ room }: PropType) => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-  };
-
-  const handleJoinButtonClick = () => {
-    window.alert(`<${room.title}> 채팅방으로 이동`);
-    closeModal();
   };
 
   const Content = () => {
@@ -49,7 +45,7 @@ const WhookRoom = ({ room }: PropType) => {
         <div className="room-title">'{room.title}'</div>
         <div className="room-ask">채팅방에 참여하시겠습니까?</div>
         <div className="room-btn-group">
-          <Button onClick={handleJoinButtonClick}>참여하기</Button>
+          <Button to={Path.whookChat}>참여하기</Button>
           <Button color="gray" onClick={closeModal}>
             뒤로가기
           </Button>

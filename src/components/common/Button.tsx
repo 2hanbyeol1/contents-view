@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import './Button.scss';
+import { Link } from 'react-router-dom';
 
 type PropType = {
   width?: number | string;
@@ -8,6 +9,7 @@ type PropType = {
   color?: string;
   text?: string;
   url?: string;
+  to?: string;
   children?: ReactNode;
   onClick?: () => void | undefined;
 };
@@ -19,6 +21,7 @@ const Button = ({
   color = '',
   text,
   url = '',
+  to = '',
   children,
   onClick,
 }: PropType) => {
@@ -28,20 +31,39 @@ const Button = ({
   };
 
   return (
-    <button
-      style={{
-        width,
-        borderRadius,
-        borderWidth,
-        borderColor: color,
-        color,
-      }}
-      className="btn"
-      onClick={() => handleClick(url)}
-    >
-      {text}
-      {children}
-    </button>
+    <>
+      {to ? (
+        <Link
+          style={{
+            width,
+            borderRadius,
+            borderWidth,
+            borderColor: color,
+            color,
+          }}
+          className="btn"
+          to={to}
+        >
+          {text}
+          {children}
+        </Link>
+      ) : (
+        <button
+          style={{
+            width,
+            borderRadius,
+            borderWidth,
+            borderColor: color,
+            color,
+          }}
+          className="btn"
+          onClick={() => handleClick(url)}
+        >
+          {text}
+          {children}
+        </button>
+      )}
+    </>
   );
 };
 
