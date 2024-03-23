@@ -97,13 +97,13 @@
 
 ### 헤더
 
-<img width="234" alt="image" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/816a756f-cda1-43f6-8b0e-3ce01d0d174f">
+<img width="425" alt="image" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/816a756f-cda1-43f6-8b0e-3ce01d0d174f">
 
 ux를 개선하기 위해서 현재 보여지고 있는 카테고리의 이름을 위에 두고, 나머지 카테고리들을 nav 슬라이더에 보여주었습니다
 
 ### 푸터
 
-<img width="234" alt="footer-img" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/0021b853-0daf-44c9-abaa-c25e48e532e1">
+<img width="425" alt="footer-img" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/0021b853-0daf-44c9-abaa-c25e48e532e1">
 
 ### 카드
 
@@ -123,7 +123,7 @@ hover 시 애니메이션, 그림자 색상 변경
 
 ### 📊 차트
 
-<img width="234" alt="chart-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/1fb2e9bc-edd6-4508-9bea-2111b877905a">
+<img width="425" alt="chart-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/1fb2e9bc-edd6-4508-9bea-2111b877905a">
 
 #### 배너
 
@@ -140,7 +140,7 @@ hover 시 애니메이션, 그림자 색상 변경
 
 ### 📰 뉴스
 
-<img width="234" alt="news-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/5cce32fb-ae22-4728-8a8c-0105d1c4b6ef">
+<img width="425" alt="news-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/5cce32fb-ae22-4728-8a8c-0105d1c4b6ef">
 
 ### 🏪 스토어
 
@@ -152,6 +152,6 @@ hover 시 애니메이션, 그림자 색상 변경
 
 ### ⚠️ 404 에러
 
-<img width="234" alt="error-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/eae8e094-4fb9-4b61-827e-fea57b15c5b9">
+<img width="425" alt="error-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/eae8e094-4fb9-4b61-827e-fea57b15c5b9">
 
 돌아가기 버튼을 누르면 이전 화면으로, 메인화면 버튼을 누르면 메인(차트)화면으로 이동합니다.
