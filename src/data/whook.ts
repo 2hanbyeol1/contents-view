@@ -1,28 +1,5 @@
 import { WhookRoomType } from '../types/whook';
 
-export const JOINED_ROOMS: WhookRoomType[] = [
-  {
-    title: '카리나 KARINA',
-    num: 11,
-    src: 'https://i.namu.wiki/i/ot030M8Ti5Eq2yYi4qZjsqVv6VY8pOlWgdMK8jWaui0vVFrF1bJd8KEizt-jqqEbebVzOw4bz6MODvu0ezo1jsnQe4BLp_SYJZpHe0nhfRtcI18I_R6MPiXtgxunKXA9XJZzb7bcuFUcKjSyvO18tQ.webp',
-  },
-  {
-    title: '윈터 WINTER',
-    num: 1,
-    src: 'https://i.namu.wiki/i/R2GrVxNxfv28tN2YmhaieHzn5y873k1sLxjd6ji94obEm2nKnwkuBl2i-5TYJPU5ArWNIs63Qgix11XKnBnQm9e9soJc-iXQq0Y5V46tLIE-9bAUWN6Uhjok_tfU8Ttbhzw4TSI6q6sPHWjYensssg.webp',
-  },
-  {
-    title: '지젤 GISELLE',
-    num: 30,
-    src: 'https://i.namu.wiki/i/LS6FAOOgbzIGVmTf51sIOCUFr6WqqBVjNKsj2PqaJBMcBT4TcDj40jtE8r_1nPbmX_nZ4sLhz4yRV6_o5KVdrPo_iSgngCRE2_02Debs-ys4CShYjr4ZoH6dbMh3yELpN25pWlISWu2Wv9JUYn1N8A.webp',
-  },
-  {
-    title: '닝닝 NINGNING',
-    num: 23,
-    src: 'https://i.namu.wiki/i/bh4v_9nhP4FhlY9hTnPchzAny39ALSvT36YQjr31HpoXyP7_OUXqKDWQfMYJjYSi0G6IGUsLyu31Ld1bXD7PL0tF-nMMaP7lNUiJKz3C3tdqLn9A7cqGD-kbl33xNBr9gC36_3Hu2k7MwTylWizo5A.webp',
-  },
-];
-
 export const WHOOK_ROOMS: WhookRoomType[] = [
   {
     title: '🖤🩷 블랙핑크 팬들 모여라 🖤🩷',
@@ -64,5 +41,25 @@ export const WHOOK_ROOMS: WhookRoomType[] = [
     title: '뉴진스 화이팅',
     num: 72,
     src: 'https://i.namu.wiki/i/WoZYFc_jrA2dEuk6ya7D6PGmKK5UV3EH9ps5hLo66mSpIpWHPdLiLa6xRcfFJGuAtgoH66ucpqczK7WVKEAaYxV9XTAMs8FhYgUE3V9wfS-dvG7EbXOwV7Sdy6VwU_QAuLIOhno777xBkhffA_v6Lw.webp',
+  },
+  {
+    title: '카리나 KARINA',
+    num: 11,
+    src: 'https://i.namu.wiki/i/ot030M8Ti5Eq2yYi4qZjsqVv6VY8pOlWgdMK8jWaui0vVFrF1bJd8KEizt-jqqEbebVzOw4bz6MODvu0ezo1jsnQe4BLp_SYJZpHe0nhfRtcI18I_R6MPiXtgxunKXA9XJZzb7bcuFUcKjSyvO18tQ.webp',
+  },
+  {
+    title: '윈터 WINTER',
+    num: 1,
+    src: 'https://i.namu.wiki/i/R2GrVxNxfv28tN2YmhaieHzn5y873k1sLxjd6ji94obEm2nKnwkuBl2i-5TYJPU5ArWNIs63Qgix11XKnBnQm9e9soJc-iXQq0Y5V46tLIE-9bAUWN6Uhjok_tfU8Ttbhzw4TSI6q6sPHWjYensssg.webp',
+  },
+  {
+    title: '지젤 GISELLE',
+    num: 30,
+    src: 'https://i.namu.wiki/i/LS6FAOOgbzIGVmTf51sIOCUFr6WqqBVjNKsj2PqaJBMcBT4TcDj40jtE8r_1nPbmX_nZ4sLhz4yRV6_o5KVdrPo_iSgngCRE2_02Debs-ys4CShYjr4ZoH6dbMh3yELpN25pWlISWu2Wv9JUYn1N8A.webp',
+  },
+  {
+    title: '닝닝 NINGNING',
+    num: 23,
+    src: 'https://i.namu.wiki/i/bh4v_9nhP4FhlY9hTnPchzAny39ALSvT36YQjr31HpoXyP7_OUXqKDWQfMYJjYSi0G6IGUsLyu31Ld1bXD7PL0tF-nMMaP7lNUiJKz3C3tdqLn9A7cqGD-kbl33xNBr9gC36_3Hu2k7MwTylWizo5A.webp',
   },
 ];

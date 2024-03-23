@@ -5,7 +5,7 @@ import useInfiniteScroll from '../../../hooks/useInfiniteScroll';
 import Loading from '../../common/Loading';
 
 const ChartListSection = () => {
-  const dataPerPage = 20;
+  const dataPerPage = 10;
   let page = 0;
 
   const getNewItems = () => {

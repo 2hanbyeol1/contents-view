@@ -5,6 +5,7 @@ type PropType = {
   width?: number | string;
   borderRadius?: number | string;
   borderWidth?: number | string;
+  color?: string;
   text?: string;
   url?: string;
   children?: ReactNode;
@@ -15,6 +16,7 @@ const Button = ({
   width = '',
   borderRadius = '0.7rem',
   borderWidth = 1.5,
+  color = '',
   text,
   url = '',
   children,
@@ -27,7 +29,13 @@ const Button = ({
 
   return (
     <button
-      style={{ width, borderRadius, borderWidth }}
+      style={{
+        width,
+        borderRadius,
+        borderWidth,
+        borderColor: color,
+        color,
+      }}
       className="btn"
       onClick={() => handleClick(url)}
     >
