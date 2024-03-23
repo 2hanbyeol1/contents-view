@@ -10,9 +10,7 @@ $pink: rgb(255, 177, 178);
 
   .header-swiper {
     padding: 0.5rem 0.5rem;
-    border-top: 1.3px solid $pink;
-    border-bottom: 1.3px solid $pink;
-
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1);
     .swiper-slide {
       display: flex;
       justify-content: center;
