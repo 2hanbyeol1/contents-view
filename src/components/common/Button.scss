@@ -1,11 +1,11 @@
-@import '../../../pages/chart/sections/BannerSection';
+$hot_pink: rgb(252, 91, 168);
 
-.banner-btn {
+.btn {
   font-size: 0.8rem;
   font-weight: bold;
   white-space: nowrap;
   color: $hot_pink;
-  border: 1.5px solid rgb(252, 91, 168);
+  border: 1.5px solid $hot_pink;
   padding: 0.3rem 0.7rem;
   border-radius: 0.7rem;
   margin-left: 0.8rem;

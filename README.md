@@ -138,6 +138,8 @@ hover 시 애니메이션, 그림자 색상 변경
 
 ### 🎉 이벤트
 
+<img width="425" alt="event-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/219e7c2d-3c3b-48fa-9b02-8ff3782b7bcb">
+
 ### 📰 뉴스
 
 <img width="425" alt="news-page" src="https://github.com/2hanbyeol1/contents-view/assets/78421872/5cce32fb-ae22-4728-8a8c-0105d1c4b6ef">

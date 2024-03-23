@@ -1,0 +1,36 @@
+.event-banner {
+  position: relative;
+
+  .event-status {
+    font-weight: bold;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .event-content {
+    .event-info-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      .event-name {
+        font-size: 0.9rem;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .event-info-bottom {
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -22,7 +22,7 @@ const Header = () => {
         loop={true}
         spaceBetween={0}
         centeredSlides={true}
-        slidesPerView={5}
+        slidesPerView={4}
         className="header-swiper"
       >
         {[...headerItemArr, ...headerItemArr].map((item, idx) => {

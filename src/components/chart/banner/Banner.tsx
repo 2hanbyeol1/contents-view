@@ -1,5 +1,5 @@
 import './Banner.scss';
-import BannerButton from './BannerButton';
+import Button from '../../common/Button';
 import useBannerStatus from '../../../hooks/useBannerStatus';
 import useFormattedDateString from '../../../hooks/useDateString';
 import { BannerType } from '../../../types/banner';
@@ -23,11 +23,7 @@ const Banner = ({ banner }: PropType) => {
         <div className="banner-content">
           <div className="banner-info-top">
             <div className="banner-name">{banner.name}</div>
-            {banner.btn ? (
-              <BannerButton text={banner.btn} url={banner.url} />
-            ) : (
-              <></>
-            )}
+            {banner.btn ? <Button text={banner.btn} url={banner.url} /> : <></>}
           </div>
           <div className="banner-date">
             {startDateStr} ~ {endDateStr}

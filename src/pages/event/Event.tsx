@@ -1,5 +1,11 @@
+import EventListSection from './section/EventListSection';
+
 const Event = () => {
-  return <></>;
+  return (
+    <>
+      <EventListSection />
+    </>
+  );
 };
 
 export default Event;
